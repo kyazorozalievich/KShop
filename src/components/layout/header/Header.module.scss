@@ -1,0 +1,205 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  backdrop-filter: blur(20px);
+  color: white;
+  background-image: url("../../assets/headerImg/headerBg.jpg");
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.807);
+    z-index: -1;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    img {
+      cursor: pointer;
+    }
+    .pages {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      font-size: 15px;
+      a {
+        color: white;
+      }
+    }
+
+    .chapter {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .input {
+        display: flex;
+        align-items: center;
+        width: 200px;
+        height: 30px;
+        border: 2px solid white;
+        border-radius: 50px;
+        input {
+          width: 85%;
+          height: 100%;
+          background: transparent;
+          border: none;
+          outline: none;
+          font-size: 15px;
+          color: white;
+          padding-inline: 10px;
+          &::placeholder {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.599);
+          }
+        }
+      }
+      .icons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        a {
+          font-size: 20px;
+        }
+      }
+      .auth {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding-block: 5px;
+        padding-inline: 10px;
+        border-radius: 50px;
+        cursor: pointer;
+        border: 2px solid white;
+        a {
+          font-size: 15px;
+        }
+        &:hover {
+          background: white;
+          color: darkblue;
+          transition: 0.5s;
+        }
+      }
+    }
+    .headerMenu {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      select {
+        display: none;
+        background: transparent;
+        color: white;
+        width: 150px;
+        height: 25px;
+        border: 2px solid white;
+        border-radius: 5px;
+        font-size: 12px;
+        outline: none;
+        font-family: "Orbitron", sans-serif;
+        option {
+          color: black;
+        }
+      }
+      .chapterBurger {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .Header {
+    .content {
+      .chapter {
+        display: none;
+      }
+      .headerMenu {
+        .chapterBurger {
+          display: block;
+          a {
+            font-size: 25px;
+          }
+          .menu {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px 15px;
+            background: white;
+            border: 2px solid black;
+            border-radius: 5px;
+            a {
+              font-size: 15px;
+              font-weight: 600;
+              color: black;
+              border-bottom: 2px solid white;
+              &:hover {
+                border-bottom: 2px solid black;
+              }
+            }
+            h3 {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              font-size: 15px;
+              color: red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 630px) {
+  .Header {
+    .content {
+      .pages {
+        display: none;
+      }
+      .headerMenu {
+        select {
+          display: block;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 520px) {
+  .Header {
+    .content {
+      img {
+        width: 70px;
+        height: 20px;
+      }
+      .headerMenu {
+        select {
+          display: block;
+          width: 100px;
+        }
+        .chapterBurger {
+          .menu {
+            padding: 10px 10px;
+            a {
+              font-size: 12px;
+            }
+            h3 {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

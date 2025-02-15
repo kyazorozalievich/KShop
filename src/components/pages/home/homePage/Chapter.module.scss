@@ -1,0 +1,49 @@
+.Chapter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 50px;
+    .chapterInfo {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      img {
+        width: 180px;
+        height: 180px;
+        object-fit: contain;
+        padding: 10px;
+        background: rgba(128, 128, 128, 0.33);
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      ul {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+        li {
+          font-size: 15px;
+          font-weight: 600;
+          border-bottom: 2px solid white;
+          cursor: pointer;
+          &:hover {
+            border-bottom: 2px solid black;
+          }
+        }
+      }
+    }
+    hr {
+      transform: rotate(180deg);
+      height: 150px;
+    }
+  }
+
+}

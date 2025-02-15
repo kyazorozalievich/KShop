@@ -1,0 +1,15 @@
+.outfitContent {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+  .outfitCards {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    overflow-x: scroll;
+    gap: 20px;
+    scrollbar-width: none;
+  }
+}

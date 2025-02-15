@@ -1,0 +1,72 @@
+.outfit {
+  width: 250px;
+  height: 350px;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: -1;
+  }
+  .text {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.708), transparent);
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    color: white;
+    flex-direction: column;
+    padding: 10px;
+    .textTop {
+      width: 100%;
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      .icons {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+        a {
+          font-size: 20px;
+        }
+      }
+      h3 {
+        font-size: 12px;
+      }
+    }
+    .textBtm {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      h2 {
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      button {
+        background: transparent;
+        width: 100%;
+        height: 30px;
+        border: 2px solid white;
+        color: white;
+        border-radius: 5px;
+        font-size: 10px;
+        &:hover {
+          color: white;
+          backdrop-filter: blur(20px);
+          transition: 0.8s;
+        }
+      }
+    }
+  }
+}

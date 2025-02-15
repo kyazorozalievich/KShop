@@ -1,0 +1,240 @@
+.CreateShoes {
+  margin-top: 100px;
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    form {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 80%;
+      height: 500px;
+      padding: 20px;
+      border: 2px solid gray;
+      border-radius: 5px;
+      .inpBlock {
+        display: flex;
+        align-items: start;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        h4 {
+          font-size: 13px;
+        }
+        .input {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          width: 30%;
+          gap: 5px;
+          input {
+            width: 100%;
+            height: 35px;
+            padding-inline: 10px;
+            border: 2px solid gray;
+            border-radius: 5px;
+          }
+          select {
+            width: 100%;
+            height: 35px;
+            padding-inline: 10px;
+            border: 2px solid gray;
+            border-radius: 5px;
+          }
+        }
+        .input2 {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          width: 40%;
+          gap: 5px;
+          .fileImg {
+            width: 100%;
+            height: 220px;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            position: relative;
+            .inpFile {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px solid gray;
+              border-radius: 5px;
+              gap: 10px;
+              cursor: pointer;
+              h3 {
+                font-size: 15px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+              }
+              &:hover {
+                background: rgba(128, 128, 128, 0.151);
+              }
+            }
+            .previewImg {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 5px;
+              z-index: 2;
+            }
+
+            button {
+              z-index: 3;
+              width: 90%;
+              border: 2px solid white;
+              margin-bottom: 10px;
+              background: transparent;
+              backdrop-filter: blur(20px);
+            }
+          }
+          .inpDesc {
+            width: 100%;
+            height: 220px;
+            border-radius: 5px;
+            border: 2px solid black;
+            padding: 10px;
+          }
+        }
+        .inputSize {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          gap: 5px;
+          width: 10%;
+          .allSize {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 5px;
+            .size {
+              width: 50px;
+              height: 35px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px solid black;
+              border-radius: 5px;
+              cursor: pointer;
+              &:hover {
+                background: rgba(128, 128, 128, 0.151);
+              }
+            }
+          }
+        }
+      }
+      button {
+        width: 100%;
+        height: 35px;
+        background: black;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: "Orbitron", sans-serif;
+      }
+    }
+  }
+}
+
+@media (max-width: 1170px) {
+  .CreateShoes {
+    .content {
+      form {
+        height: auto;
+        gap: 20px;
+        .inpBlock {
+          flex-wrap: wrap;
+          gap: 20px;
+          .input {
+            width: 48%;
+          }
+          .input2 {
+            width: 48%;
+          }
+          .inputSize {
+            width: 100%;
+            .allSize {
+              display: flex;
+              align-items: center;
+              flex-direction: row;
+              justify-content: space-between;
+              width: 100%;
+              flex-wrap: wrap;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .CreateShoes {
+    .content {
+      form {
+        .inpBlock {
+          gap: 10px;
+          
+          .inputSize {
+            .allSize {
+              justify-content: start;
+              .size {
+                font-size: 12px;
+                font-weight: 600;
+                width: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 580px) {
+  .CreateShoes {
+    .content {
+      form {
+        .inpBlock {
+          .input {
+            width: 100%;
+          }
+          .input2 {
+            width: 100%;
+            .fileImg {
+              button {
+                font-size: 12px;
+              }
+            }
+          }
+          .inputSize {
+            .allSize {
+              justify-content: space-between;
+              .size {
+                font-size: 12px;
+                font-weight: 600;
+                width: 40px;
+              }
+            }
+          }
+        }
+        button {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
