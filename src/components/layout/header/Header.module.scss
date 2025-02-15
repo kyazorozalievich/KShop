@@ -95,6 +95,7 @@
       align-items: center;
       gap: 20px;
       select {
+        padding-inline: 10px;
         display: none;
         background: transparent;
         color: white;
@@ -187,17 +188,6 @@
         select {
           display: block;
           width: 100px;
-        }
-        .chapterBurger {
-          .menu {
-            padding: 10px 10px;
-            a {
-              font-size: 12px;
-            }
-            h3 {
-              font-size: 12px;
-            }
-          }
         }
       }
     }
