@@ -19,7 +19,7 @@ const Chapter = () => {
               <li>T-Shirt</li>
             </ul>
           </div>
-          <hr />
+          <hr /> 
           <div className={scss.chapterInfo}>
             <Image src={chapterImg2} alt="chapterImg2" />
             <ul>

@@ -1,7 +1,5 @@
 "use client";
 import scss from "./Welcome.module.scss";
-import imgShop from "../../../assets/sectionImg/imgMan.png";
-import Image from "next/image";
 
 const Welcome = () => {
   return (
@@ -18,14 +16,13 @@ const Welcome = () => {
                 best products for your comfort and enjoyment. Happy shopping!
               </p>
               <ul>
-                (<li>Вкус</li>
+                (<li>Вкус</li> 
                 <li>Стиль</li>
                 <li>Мода</li>
                 <li>Образ</li>
                 <li>Мечта</li>)
               </ul>
             </div>
-            <Image src={imgShop} alt="img" width={100} />
           </div>
         </div>
       </div>

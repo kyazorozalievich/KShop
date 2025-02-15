@@ -69,15 +69,15 @@ const CreateShoes = () => {
       };
 
       await postKShop(newData);
-      reset();
+      // reset();
       setImg("");
-      setSizeS(false);
-      setSizeL(false);
-      setSizeM(false);
-      setSizeXL(false);
-      setSize2XL(false);
-      setTypeMain("");
-      setTypeNext("");
+      // setSizeS(false);
+      // setSizeL(false);
+      // setSizeM(false);
+      // setSizeXL(false);
+      // setSize2XL(false);
+      // setTypeMain("");
+      // setTypeNext("");
 
       toast.success("Товар успешно оформлен", {
         position: "top-right",

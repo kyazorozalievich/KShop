@@ -13,7 +13,7 @@ const MySite = () => {
         <h1>LOGO</h1>
       </div>
     </section>
-  );
+  ); 
 };
 
 export default MySite;

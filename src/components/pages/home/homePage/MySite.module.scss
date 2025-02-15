@@ -10,6 +10,19 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-   
+    overflow-x: scroll;
+    gap: 20px;
+    scrollbar-width: none;
+  }
+} 
+
+@media (max-width: 768px) {
+  .MySite {
+    height: 80px;
+    .content {
+      h1 {
+        font-size: 20px;
+      }
+    }
   }
 }
