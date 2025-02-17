@@ -1,0 +1,67 @@
+.OutfitAll {
+  padding-top: 50px;
+  .content {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    justify-content: space-between;
+    .filter {
+      width: 250px;
+      height: 80vh;
+      padding-block: 20px;
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 20px;
+      h2 {
+        font-size: 20px;
+      }
+      .otdel {
+        padding-left: 20px;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+        h3 {
+          font-size: 15px;
+        }
+        .buttons {
+          align-items: center;
+          gap: 5px;
+          display: flex;
+          flex-wrap: wrap;
+          button {
+            padding-inline: 10px;
+            padding-block: 5px;
+            border: 2px solid black;
+            background: transparent;
+            color: black;
+            border-radius: 5px;
+            &:hover {
+              background: rgba(128, 128, 128, 0.332);
+            }
+          }
+        }
+      }
+    }
+    hr {
+      height: 90vh;
+    }
+    .blocks {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      width: 70%;
+      padding-block: 20px;
+      height: 90vh;
+      overflow-y: scroll;
+      scrollbar-width: none;
+      .block {
+        width: 250px;
+        height: 350px;
+        background: #000;
+      }
+    }
+  }
+}

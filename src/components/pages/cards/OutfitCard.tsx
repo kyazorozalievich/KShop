@@ -6,7 +6,7 @@ import Image from "next/image";
 
 interface IProduct {
   title: string;
-  price: number;
+  price: number; 
   img: string;
   description: string;
   size: string;

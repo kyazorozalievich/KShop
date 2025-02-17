@@ -15,6 +15,7 @@ import { useState } from "react";
 const Header = () => {
   const router = useRouter();
   const [chpaterMenu, setChapterMenu] = useState(false);
+
   return (
     <section className={scss.Header}>
       <div className={scss.bg}></div>
@@ -29,11 +30,54 @@ const Header = () => {
           />
           <div className={scss.pages}>
             <Link href="/">Home</Link>
-            <Link href="/">Category</Link>
-            <Link href="/">Outfit</Link>
-            <Link href="/">Contact</Link>
+            <Link href="/category">Category</Link>
+            <Link href="/outfit">Outfit</Link>
+            <Link href="/contact">Contact</Link>
           </div>
-
+          <div className={scss.headerMenu}>
+            <select>
+              <option value="/">Home</option>
+              <option value="/">Category</option>
+              <option value="/">Outfit</option>
+              <option value="/">Contact</option>
+            </select>
+            <div className={scss.chapterBurger}>
+              <a onClick={() => setChapterMenu(true)}>
+                <CgMenuRightAlt />
+              </a>
+              {chpaterMenu && (
+                <div className={scss.menu}>
+                  <Link
+                    href="/content/search"
+                    onClick={() => setChapterMenu(false)}
+                  >
+                    Search
+                  </Link>
+                  <Link
+                    href="/content/basket"
+                    onClick={() => setChapterMenu(false)}
+                  >
+                    Basket
+                  </Link>
+                  <Link
+                    href="/content/favorite"
+                    onClick={() => setChapterMenu(false)}
+                  >
+                    Favorite
+                  </Link>
+                  <Link href="/create" onClick={() => setChapterMenu(false)}>
+                    Create
+                  </Link>
+                  <Link href="/auth" onClick={() => setChapterMenu(false)}>
+                    Sign Up
+                  </Link>
+                  <h3 onClick={() => setChapterMenu(false)}>
+                    Close <MdClear />
+                  </h3>
+                </div>
+              )}
+            </div>
+          </div>
           <div className={scss.chapter}>
             <div className={scss.input}>
               <input type="text" placeholder="Search product..." />
@@ -57,31 +101,6 @@ const Header = () => {
               <a>
                 <FaRegUserCircle />
               </a>
-            </div>
-          </div>
-          <div className={scss.headerMenu}>
-            <select>
-              <option value="/">Home</option>
-              <option value="/">Category</option>
-              <option value="/">Outfit</option>
-              <option value="/">Contact</option>
-            </select>
-            <div className={scss.chapterBurger}>
-              <a onClick={() => setChapterMenu(true)}>
-                <CgMenuRightAlt />
-              </a>
-              {chpaterMenu && (
-                <div className={scss.menu}>
-                  <Link href="/content/search">Search</Link>
-                  <Link href="/content/basket">Basket</Link>
-                  <Link href="/content/favorite">Favorite</Link>
-                  <Link href="/create">Create</Link>
-                  <Link href="/auth">Sign Up</Link>
-                  <h3 onClick={() => setChapterMenu(false)}>
-                    Close <MdClear />
-                  </h3>
-                </div>
-              )}
             </div>
           </div>
         </div>

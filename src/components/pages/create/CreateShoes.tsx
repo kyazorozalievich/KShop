@@ -13,7 +13,7 @@ interface IProduct {
   img: string[];
   description: string;
   size: string;
-  material: string; 
+  material: string;
   rate: number;
   count: number;
   typeMain: string;
@@ -117,7 +117,7 @@ const CreateShoes = () => {
               </div>
               <div className={scss.input}>
                 <h4>Price</h4>
-                <input        
+                <input
                   type="number"
                   placeholder="price..."
                   {...register("price", { required: true })}

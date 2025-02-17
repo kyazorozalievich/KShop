@@ -12,7 +12,7 @@ const Outfits = () => {
         <div className={scss.outfitContent}>
           <h1>Outfits</h1>
           <div className={scss.outfitCards}>
-            {data?.data.map((el) => (
+            {data?.data.map((el) => el.typeMain === 'outfit' && (
               <OutfitCard el={el} key={el._id} />
             ))}
           </div>

@@ -1,0 +1,15 @@
+.Accessories {
+  .content {
+    width: 100%;
+    .cards {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      height: 450px;
+      overflow-x: scroll;
+      scrollbar-width: none;
+    }
+  }
+}

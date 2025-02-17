@@ -41,6 +41,7 @@ const api = index.injectEndpoints({
       invalidatesTags: ["kshop"],
     }),
   }),
+  overrideExisting: true,
 });
 
 export const {
